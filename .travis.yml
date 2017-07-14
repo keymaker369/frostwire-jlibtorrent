@@ -255,6 +255,7 @@ before_deploy:
 #  on:
 #    all_branches: true
 #za build aaaaaaaa
+#za deploy
 deploy:
   provider: releases
   api_key:
