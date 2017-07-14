@@ -162,7 +162,7 @@ before_deploy:
 - find . -type f | egrep -v '.*\.so$|.*\.dll$|.*\.dylib$' | xargs rm
 - find . -empty -type d | xargs rm -r
 - cd ../..
-#za build
+#za build aaaaaaaa
 deploy:
   provider: releases
   api_key:
