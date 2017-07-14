@@ -2,19 +2,19 @@ language: cpp
 
 matrix:
   include:
-    - env: os_build=android os_arch=arm android_api=16
-    - env: os_build=android os_arch=arm64 android_api=21
-    - env: os_build=android os_arch=x86 android_api=16
-    - env: os_build=android os_arch=x86_64 android_api=21
+#    - env: os_build=android os_arch=arm android_api=16
+#    - env: os_build=android os_arch=arm64 android_api=21
+#    - env: os_build=android os_arch=x86 android_api=16
+#    - env: os_build=android os_arch=x86_64 android_api=21
     - env: os_build=linux os_arch=x86
     - env: os_build=linux os_arch=x86_64
     - dist: trusty
       env: os_build=windows os_arch=x86
     - dist: trusty
       env: os_build=windows os_arch=x86_64
-    - os: osx
-      osx_image: xcode7.3
-      env: os_build=macosx os_arch=x86_64
+#    - os: osx
+#      osx_image: xcode7.3
+#      env: os_build=macosx os_arch=x86_64
 
 branches:
   only:
@@ -245,12 +245,19 @@ before_deploy:
   - find . -empty -type d | xargs rm -r
   - cd ../..
 
+#deploy:
+#  provider: s3
+#  access_key_id: $S3_ACCESS_KEY
+#  secret_access_key: $S3_SECRET_KEY
+#  bucket: $S3_BUCKET
+#  skip_cleanup: true
+#  local_dir: swig/bin
+#  on:
+#    all_branches: true
 deploy:
-  provider: s3
-  access_key_id: $S3_ACCESS_KEY
-  secret_access_key: $S3_SECRET_KEY
-  bucket: $S3_BUCKET
+  provider: releases
+  api_key: '17c31e273250730a1b044a036a183731a3573e90'
+  file: 'release.zip'
   skip_cleanup: true
-  local_dir: swig/bin
   on:
-    all_branches: true
+    tags: true
