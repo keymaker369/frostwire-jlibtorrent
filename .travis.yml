@@ -7,11 +7,11 @@ matrix:
 #    - env: os_build=android os_arch=x86 android_api=16
 #    - env: os_build=android os_arch=x86_64 android_api=21
 #    - env: os_build=linux os_arch=x86
-    - env: os_build=linux os_arch=x86_64
+#    - env: os_build=linux os_arch=x86_64
 #    - dist: trusty
 #      env: os_build=windows os_arch=x86
-#    - dist: trusty
-#      env: os_build=windows os_arch=x86_64
+    - dist: trusty
+      env: os_build=windows os_arch=x86_64
 #    - os: osx
 #      osx_image: xcode7.3
 #      env: os_build=macosx os_arch=x86_64
