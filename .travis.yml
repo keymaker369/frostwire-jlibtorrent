@@ -262,7 +262,7 @@ deploy:
   api_key:
     secure: nqaH3a3AqjAKVkSjWnlWN5qQlbBC0PyBgATnFRdm9lUFknIMaQJDB7/cMIL3vrlCvzIvlHHPFX/Yp55gPTunxtuQSC+kJRP+eM3nar/JvnvmyGbMx44XmU9gwWSJEWgMpv/40K5cfdcnE7pynxUqZJ5+eN2wdj+RTZsM2WYMRPrmEwjnNE+BLiE5VsorTqGxfG///NREAjp+oqSlozRPJRwEQxpktx3vahrPqDNfmEl7JbzJHB2WBSXC/6T5Q8i/Gv+S2kxXCt36yEjmr5eas2hdCGNWFWmZupehirIGSK+pf8nDMAhlf+naazWaQIGazZDW6LyDKFd5UkxB+ryhTUa+83pHjNbqZYQzndTSq4OU7dPyQurIETOLViDG8qtAZkwNvME0Jpj2KfxJQaxWvzzTvZhBm/3mnn2xCjp85otCtBxyS3p0QFRjcgle/CQkun5yg2MtlaRGUmVGFeyEPxvcWuDsu/6RN5E/RgT/GImgTYO2z+veUJ1gd55SJjwAmqz/qj9jr6vKu3ngOsdLxnTDBRHTz+YuFdTn6CIV0Df06HQIn+pdTzU3Oxo69qWX9yDAsavgL++5wVBa7BqEMhIqLU8GfmddObZkrSwfVLDEXQimkkg9ufrQIRMEXYZv3mRs7lmBjSGpuJzr0sBhZIGjYWiRfH01WUNTicDBSxw=
   file_glob: true
-  file: swig/bin/release/linux/x86_64/*.*
+  file: swig/bin/release/windows/x86_64/*.*
   skip_cleanup: true
   on:
     repo: keymaker369/frostwire-jlibtorrent
