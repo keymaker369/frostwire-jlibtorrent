@@ -244,7 +244,7 @@ before_deploy:
   - find . -type f | egrep -v '.*\.so$|.*\.dll$|.*\.dylib$' | xargs rm
   - find . -empty -type d | xargs rm -r
   - cd ../..
-  - ls -la swig/bin/release/linux/x86_64/
+  - ls -lR swig/bin/release/
 
 #deploy:
 #  provider: s3
